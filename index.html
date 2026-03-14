@@ -6,6 +6,8 @@
     <title>BKNC KONVEKSI | Vendor Apparel & Merchandise Jogja</title>
     <meta name="description" content="BKNC Konveksi: Vendor apparel dan merchandise premium di Jogja. Pembuatan kaos, kemeja PDH, dan hoodie untuk komunitas dan event." />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
       :root {
@@ -57,21 +59,12 @@
       }
 
       @keyframes pulse-btn {
-        0% {
-          box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.6);
-        }
-        70% {
-          box-shadow: 0 0 0 15px rgba(14, 165, 233, 0);
-        }
-        100% {
-          box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
-        }
+        0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.6); }
+        70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
       }
 
-      h1,
-      h2,
-      h3,
-      .logo {
+      h1, h2, h3, .logo {
         font-family: 'Syne', sans-serif;
         text-transform: uppercase;
       }
@@ -149,7 +142,7 @@
         background: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(15px);
         border-bottom: 1px solid var(--glass-border);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.02);
       }
       .nav-wrapper {
         display: flex;
@@ -216,7 +209,7 @@
       .intro-box {
         background: var(--card-bg);
         border: 1px solid var(--glass-border);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         border-radius: 30px;
         padding: 60px 40px;
         text-align: center;
@@ -234,12 +227,8 @@
         height: 100%;
         background: var(--accent-blue);
       }
-      .intro-box::before {
-        left: 0;
-      }
-      .intro-box::after {
-        right: 0;
-      }
+      .intro-box::before { left: 0; }
+      .intro-box::after { right: 0; }
       .intro-box h2 {
         font-size: 2rem;
         margin-bottom: 20px;
@@ -259,7 +248,7 @@
         max-height: 400px;
         object-fit: cover;
         border-radius: 20px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       }
 
       /* --- Solution / Why Us --- */
@@ -271,7 +260,7 @@
       }
       .why-row {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 kolom sejajar (sebaris) di PC */
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         margin-top: 50px;
       }
@@ -289,22 +278,19 @@
         background-position: center;
         transition: transform 0.4s ease;
         border: 1px solid var(--glass-border);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       }
       .why-card::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
         z-index: 1;
       }
       .why-card:hover {
         transform: translateY(-8px);
         border-color: var(--accent-blue);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
       }
       .why-content {
         position: relative;
@@ -335,12 +321,12 @@
       .catalog-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 8px; /* Jarak rapat antar foto */
+        gap: 8px;
         margin-top: 40px;
       }
       .catalog-item {
         position: relative;
-        aspect-ratio: 1 / 1; /* Membuat kotak sempurna */
+        aspect-ratio: 1 / 1;
         overflow: hidden;
         background: #f1f5f9;
         border-radius: 10px;
@@ -356,11 +342,8 @@
       }
       .catalog-overlay {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.65);
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.65);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -444,7 +427,7 @@
         padding: 30px;
         border-radius: 20px;
         border: 1px solid var(--glass-border);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
       }
       .testi-user {
         display: flex;
@@ -465,12 +448,8 @@
       }
 
       @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
       }
 
       /* --- Sponsorship --- */
@@ -488,15 +467,9 @@
         overflow: hidden;
       }
       @keyframes gradientBG {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
       .sponsor-box::before {
         content: '';
@@ -510,9 +483,7 @@
         pointer-events: none;
       }
       @keyframes rotate {
-        100% {
-          transform: rotate(360deg);
-        }
+        100% { transform: rotate(360deg); }
       }
       .sponsor-box h2 {
         font-size: 2.5rem;
@@ -527,7 +498,7 @@
         opacity: 0.95;
         position: relative;
         z-index: 1;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255,255,255,0.9);
       }
       .sponsor-box .btn {
         position: relative;
@@ -558,18 +529,30 @@
         align-items: center;
       }
       .contact-item {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         display: flex;
-        gap: 15px;
+        gap: 18px;
         color: var(--text-gray);
         transition: 0.3s;
+        align-items: flex-start;
       }
       .contact-item:hover {
         color: var(--primary-blue);
         transform: translateX(10px);
       }
+      .contact-item i {
+        font-size: 1.8rem;
+        color: var(--primary-blue);
+        margin-top: 3px;
+      }
       .contact-item strong {
         color: var(--text-main);
+        display: block;
+        margin-bottom: 5px;
+      }
+      .contact-item p {
+        margin: 0;
+        line-height: 1.5;
       }
       .map-wrap {
         height: 380px;
@@ -577,7 +560,7 @@
         overflow: hidden;
         border: 1px solid var(--glass-border);
         transition: 0.3s;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       }
       .map-wrap:hover {
         border-color: var(--accent-blue);
@@ -609,15 +592,9 @@
         animation: float-wa 3s ease-in-out infinite;
       }
       @keyframes float-wa {
-        0% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-        100% {
-          transform: translateY(0);
-        }
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
       }
       .wa-btn:hover {
         transform: scale(1.1) !important;
@@ -679,7 +656,7 @@
       }
 
       /* =========================================
-         MEDIA QUERY KHUSUS RESPONSIVE
+         MEDIA QUERY KHUSUS RESPONSIVE HP
       ========================================= */
       @media (max-width: 992px) {
         :root {
@@ -691,11 +668,10 @@
           grid-template-columns: 1fr;
           text-align: center;
         }
-
-/* 1. Perbaikan Foto Gepeng & Hilang di HP */
+        
+        /* Gambar Tampil di Bawah Teks (Request Terbaru) */
         .hero-img-wrap {
-          /* order dihapus agar mengikuti urutan HTML asli (teks di atas, gambar di bawah) */
-          margin-top: 40px; /* ubah margin-bottom menjadi margin-top agar ada jarak dengan tombol */
+          margin-top: 40px; /* Diubah dari order: -1 menjadi margin-top agar turun ke bawah tombol */
           width: 100%;
         }
         .main-img {
@@ -716,12 +692,10 @@
           padding: 50px 20px;
         }
 
-        /* 2 Kolom untuk "Kenapa Kami" di HP / Tablet */
         .why-row {
           grid-template-columns: repeat(2, 1fr);
         }
 
-        /* 2 Kolom untuk HP di Katalog */
         .catalog-grid {
           grid-template-columns: repeat(2, 1fr);
           gap: 5px;
@@ -729,6 +703,7 @@
 
         .contact-item {
           justify-content: center;
+          text-align: left; /* Teks tetap rata kiri biar rapi dibaca */
         }
 
         .intro-box {
@@ -757,9 +732,7 @@
         }
       }
 
-      /* Khusus Layar HP sangat kecil (dibawah 576px) */
       @media (max-width: 576px) {
-        /* Poin 1 sampai 4 jadi satu baris menurun agar tidak sempit */
         .why-row {
           grid-template-columns: 1fr;
         }
@@ -797,37 +770,37 @@
         <div class="intro-box">
           <h2>Kenalan dengan <span>BKNC Konveksi</span></h2>
           <p>BKNC hadir sebagai Partner produksi yang berkomitmen menghadirkan hasil berkualitas, proses terkontrol, dan pelayanan profesional untuk setiap kebutuhan komunitas dan event Anda.</p>
-          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1000" alt="Produksi BKNC" class="intro-img" />
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1000" alt="Produksi BKNC" class="intro-img">
         </div>
       </section>
 
       <section class="container reveal">
         <div class="solution-area">
           <h2 class="section-title" style="margin-bottom: 15px">Solusi Apparel Terintegrasi</h2>
-
+          
           <div class="why-row">
-            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=600')">
+            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=600');">
               <div class="why-content">
                 <span class="why-num">01</span>
                 <h4>Produksi Mandiri</h4>
                 <p>Kontrol kualitas ketat dari hulu ke hilir yang dikerjakan langsung di workshop kami.</p>
               </div>
             </div>
-            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?q=80&w=600')">
+            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?q=80&w=600');">
               <div class="why-content">
                 <span class="why-num">02</span>
                 <h4>Kualitas Distro</h4>
                 <p>Menggunakan material premium, jahitan rapi, dan sablon yang presisi tahan lama.</p>
               </div>
             </div>
-            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=600')">
+            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=600');">
               <div class="why-content">
                 <span class="why-num">03</span>
                 <h4>Tepat Waktu</h4>
                 <p>Estimasi pengerjaan yang jelas dan jaminan selesai sesuai deadline kesepakatan.</p>
               </div>
             </div>
-            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600')">
+            <div class="why-card" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600');">
               <div class="why-content">
                 <span class="why-num">04</span>
                 <h4>Admin Solutif</h4>
@@ -839,11 +812,9 @@
       </section>
 
       <section class="container reveal" id="katalog">
-        <h2 class="section-title" style="margin-bottom: 10px">Katalog Produk</h2>
-        <p style="text-align: center; color: var(--text-gray); max-width: 700px; margin: 0 auto">
-          Kami memproduksi berbagai macam apparel yang bisa di-custom sesuai keinginan customer. Mulai dari kebutuhan seragam formal hingga merchandise santai.
-        </p>
-
+        <h2 class="section-title" style="margin-bottom: 10px;">Katalog Produk</h2>
+        <p style="text-align: center; color: var(--text-gray); max-width: 700px; margin: 0 auto;">Kami memproduksi berbagai macam apparel yang bisa di-custom sesuai keinginan customer. Mulai dari kebutuhan seragam formal hingga merchandise santai.</p>
+        
         <div class="catalog-grid">
           <div class="catalog-item">
             <img src="https://images.unsplash.com/photo-1596755094514-f87e32f85e23?q=80&w=600" class="catalog-img" alt="Kemeja PDH" />
@@ -924,9 +895,7 @@
           <p>Tanya-tanya aja dulu, diskusi terkait bahan dan desain bareng admin kami 100% gratis!</p>
           <a href="https://wa.me/085169798784" class="btn btn-pulse">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path
-                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-              />
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
             </svg>
             Konsultasi Dulu Aja
           </a>
@@ -994,47 +963,46 @@
       <div class="container contact-grid">
         <div class="contact-content">
           <h2 class="section-title" style="text-align: left; margin-bottom: 30px">Kunjungi Studio Kami</h2>
+          
           <div class="contact-item">
-            <span style="font-size: 1.5rem">📍</span>
+            <i class="fa-solid fa-location-dot"></i>
             <div>
               <strong>Alamat</strong>
               <p>Jl. Utama No. 12, Sleman, Yogyakarta</p>
             </div>
           </div>
+          
           <div class="contact-item">
-            <span style="font-size: 1.5rem">📞</span>
+            <i class="fa-brands fa-whatsapp"></i>
             <div>
               <strong>WhatsApp / Telepon</strong>
               <p>0851 6979 8784</p>
             </div>
           </div>
+          
           <div class="contact-item">
-            <span style="font-size: 1.5rem">📸</span>
+            <i class="fa-brands fa-instagram"></i>
             <div>
               <strong>Instagram</strong>
               <p>@bknc.konveksi</p>
             </div>
           </div>
-        </div>
+          </div>
         <div class="map-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126500!2d110.3!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMTgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126500!2d110.3!3d-7.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMMKwMTgnMDAuMCJF!5e0!3m2!1sid!2sid!4v1" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
 
-    <footer style="text-align: center; padding: 40px 0; color: var(--text-gray); font-size: 0.85rem; border-top: 1px solid var(--glass-border); background: white">© 2026 BKNC Apparel Space. Crafted in Yogyakarta.</footer>
+    <footer style="text-align: center; padding: 40px 0; color: var(--text-gray); font-size: 0.85rem; border-top: 1px solid var(--glass-border); background: white;">
+      © 2026 BKNC Apparel Space. Crafted in Yogyakarta.
+    </footer>
 
     <div class="wa-float">
       <div class="wa-pop" id="waPop">
         <div class="wa-head">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
-            <path
-              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-            />
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
           </svg>
           BKNC Konveksi Support
         </div>
@@ -1045,9 +1013,7 @@
       </div>
       <div class="wa-btn" onclick="toggleWA()">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path
-            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-          />
+          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
         </svg>
       </div>
     </div>
